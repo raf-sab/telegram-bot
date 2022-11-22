@@ -44,7 +44,7 @@ def start(message: telebot.types.Message):
 def values(message: telebot.types.Message):
     text = "Доступные валюты:\n"
     for key in keys:
-        text = '\n-  <b>'.join((text, key)) + '</b>     \n   <i>' + keys[key][0] + '  |  ' + keys[key][4] + '</i>'
+        text = '\n-  <b>'.join((text, key)) + '</b>\n   <i>' + keys[key][0] + '  |  ' + keys[key][4] + '</i>'
     bot.send_message(message.chat.id, text, parse_mode='html')
 
 
